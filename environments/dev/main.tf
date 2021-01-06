@@ -33,7 +33,7 @@ provider "google" {
 resource "random_id" "random_suffix" {
   byte_length = 4
 }
-
+"Data Lake CI/CD Testing 1
 locals {
   gcs_bucket_name = "tmp-dir-bucket-${random_id.random_suffix.hex}-${local.env}"
 }
